@@ -1,0 +1,3 @@
+language: objective-c
+xcode_project: iPhoneCalculator.xcodeproj 
+script: "ruby cucumber-runner.rb"
