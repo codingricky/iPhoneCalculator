@@ -22,6 +22,8 @@
 		76528b991af3ce086ef55195 /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = d6359b65d828216cd2611190 /* calabash.framework */; };
 		9749c26c60b91e457584e0b8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F716BE143200FC00A82FC5 /* Foundation.framework */; };
 		9C8D207E19F66F09008EA5B8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C8D207D19F66F09008EA5B8 /* Security.framework */; };
+		9C8D20DE19F688C9008EA5B8 /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D20DD19F688C9008EA5B8 /* UIDeviceHardware.m */; };
+		9C8D20DF19F688C9008EA5B8 /* UIDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D20DD19F688C9008EA5B8 /* UIDeviceHardware.m */; };
 		bf36d349250a24838454e4e5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F716BC143200FC00A82FC5 /* UIKit.framework */; };
 		d936376af9a140a917f3810e /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F716C8143200FC00A82FC5 /* main.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,8 @@
 		55F716D9143205EC00A82FC5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		9C8D207C19F66DC0008EA5B8 /* iPhoneCalculator-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhoneCalculator-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8D207D19F66F09008EA5B8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9C8D20DC19F688A0008EA5B8 /* UIDeviceHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDeviceHardware.h; path = UIDeviceHardware/UIDeviceHardware.h; sourceTree = "<group>"; };
+		9C8D20DD19F688C9008EA5B8 /* UIDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIDeviceHardware.m; path = UIDeviceHardware/UIDeviceHardware.m; sourceTree = "<group>"; };
 		d6359b65d828216cd2611190 /* calabash.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +111,7 @@
 		55F716C2143200FC00A82FC5 /* iPhoneCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				9C8D20DB19F6887E008EA5B8 /* UIDeviceHardware */,
 				55F716CB143200FC00A82FC5 /* AppDelegate.h */,
 				55F716CC143200FC00A82FC5 /* AppDelegate.m */,
 				55F716CE143200FC00A82FC5 /* CalculatorViewController.h */,
@@ -126,6 +131,15 @@
 				55F716CA143200FC00A82FC5 /* iPhoneCalculator-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C8D20DB19F6887E008EA5B8 /* UIDeviceHardware */ = {
+			isa = PBXGroup;
+			children = (
+				9C8D20DC19F688A0008EA5B8 /* UIDeviceHardware.h */,
+				9C8D20DD19F688C9008EA5B8 /* UIDeviceHardware.m */,
+			);
+			name = UIDeviceHardware;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				d936376af9a140a917f3810e /* main.m in Sources */,
+				9C8D20DF19F688C9008EA5B8 /* UIDeviceHardware.m in Sources */,
 				2d4bff1002149e2a5cb2b535 /* AppDelegate.m in Sources */,
 				47574c7959e9c41c0fea6925 /* CalculatorViewController.m in Sources */,
 			);
@@ -227,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F716C9143200FC00A82FC5 /* main.m in Sources */,
+				9C8D20DE19F688C9008EA5B8 /* UIDeviceHardware.m in Sources */,
 				55F716CD143200FC00A82FC5 /* AppDelegate.m in Sources */,
 				55F716D0143200FC00A82FC5 /* CalculatorViewController.m in Sources */,
 			);
