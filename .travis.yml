@@ -1,5 +1,5 @@
 language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj 
 install: gem install calabash-cucumber --no-ri --no-rdoc	
-before_script: "xctool -scheme iPhoneCalculator-cal -configuration Debug -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO"
+before_script: "./build.sh"
 script: "cucumber"
