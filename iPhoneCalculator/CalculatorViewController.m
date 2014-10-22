@@ -1,5 +1,6 @@
 
 #import "CalculatorViewController.h"
+#import "UIDeviceHardware.h"
 
 @implementation CalculatorViewController
 
@@ -71,6 +72,8 @@
     // initialize memory to 0
     memory = 0;
     
+    NSString *platformString = [[UIDeviceHardware platformString] stringByAppendingString:@"ftw"];
+    
     // Add buttons
     [self addButtonWithTitle:@"mc"      tag:kButtonMC           row:0 column:0 width:1 height:1];
     [self addButtonWithTitle:@"m+"      tag:kButtonMPlus        row:0 column:1 width:1 height:1];
@@ -99,6 +102,9 @@
     
     [self addButtonWithTitle:@"0"       tag:kButtonZero         row:5 column:0 width:2 height:1];
     [self addButtonWithTitle:@"."       tag:kButtonDot          row:5 column:2 width:1 height:1];
+    
+    [self addButtonWithTitle:platformString       tag:kButtonDot          row:6 column:0 width:3 height:1];
+
 }
 
 #pragma mark utilities
