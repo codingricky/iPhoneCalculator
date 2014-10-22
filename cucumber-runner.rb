@@ -2,9 +2,9 @@ require 'fileutils'
 require 'rubygems'
 
 TARGETS = []
-TARGETS << 'iPad 2 (8.0 Simulator)'
-TARGETS << 'iPhone 6 (8.0 Simulator)'
-TARGETS << 'iPhone 4s (8.0 Simulator)'
+#TARGETS << 'iPad 2 (7.1 Simulator)'
+TARGETS << 'iPhone 5s (7.1 Simulator)'
+#TARGETS << 'iPhone 4s (7.1 Simulator)'
 
 TARGETS.each do |target|
 	ENV['DEVICE_TARGET'] = target
