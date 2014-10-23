@@ -1,7 +1,7 @@
 language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj 
 env: 
-	- DEVICE_TARGET='iPhone 5s (7.1 Simulator)'
+     - DEVICE_TARGET='iPhone 5s (7.1 Simulator)'
 install: bundle install	
 before_script: "./build.sh"
 script: "cucumber"
