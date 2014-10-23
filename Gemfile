@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
 gem 'calabash-cucumber'
-gem 'rmagick'
+gem 'mini_magick'
