@@ -8,6 +8,14 @@ TARGETS << 'iPhone 5s (7.1 Simulator)'
 #TARGETS << 'iPhone 4s (7.1 Simulator)'
 
 def add_filename_to_image(file_name)
+	img =  MiniMagick::Image.open(file_name)
+	img.combine_options do |c|
+		c.gravity "northwest"
+		c.fill "red"
+		c.pointsize 30
+		c.draw "text 30, 30 '#{file_name}'"
+	end
+	img.write(file_name)
 end
 
 TARGETS.each do |target|
@@ -17,7 +25,11 @@ TARGETS.each do |target|
 	FileUtils.mkdir_p(screenshot_path)
 
 	puts "Running using #{target} storing screenshots #{screenshot_path}"
-
 	system('cucumber')
+
+	files = Dir.glob(File.join(screenshot_path, "*.png"))
+	files.each do |file|
+		add_filename_to_image(file)
+	end
 end
 
