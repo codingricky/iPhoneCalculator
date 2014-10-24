@@ -1,9 +1,9 @@
-Feature: Running a test
+Feature: Taking Pictures of the App
   As an iOS developer
-  I want to have a sample feature file
-  So I can begin testing quickly
+  I want to take pictures of my App
+  So I will know if the layout is correct 
 
-Scenario: Example steps
+Scenario: Taking Selfies of the App
   Given I am on the Welcome Screen
   And take picture
   Then I rotate the device so the home button is on the right

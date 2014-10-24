@@ -1,6 +1,11 @@
 language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj 
-before_install: brew install imagemagick 
+before_install: 
+        - brew install imagemagick 
+        - curl http://www.imagemagick.org/Usage/scripts/imagick_type_gen > imagick_type_gen.sh
+        - chmod a+x imagick_type_gen.sh
+        - mkdir ~/.magick 
+        - imagick_type_gen.sh > ~/.magick/type.xml
 install: bundle install	
 before_script: "./build.sh"
 script: "ruby cucumber-runner.rb"
