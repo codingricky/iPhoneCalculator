@@ -18,6 +18,19 @@ def add_filename_to_image(file_name)
 	img.write(file_name)
 end
 
+def append_images_together(files)
+	 result =  MiniMagick::Tool::Convert.new do |convert|
+	 	files.each do |f|
+	 		convert << f
+	 	end
+	 	convert << "-append"
+	 	convert << "screenshot.png"
+	 end
+end
+
+
+outputted_screenshots = []
+
 TARGETS.each do |target|
 	ENV['DEVICE_TARGET'] = target
 	screenshot_path = File.join("screenshots", target.gsub('(7.1 Simulator)', '').gsub(' ', ''), "")
@@ -30,6 +43,9 @@ TARGETS.each do |target|
 	files = Dir.glob(File.join(screenshot_path, "*.png"))
 	files.each do |file|
 		add_filename_to_image(file)
+		outputted_screenshots << file
 	end
 end
+
+append_images_together(outputted_screenshots)
 
