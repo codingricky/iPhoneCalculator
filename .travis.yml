@@ -2,4 +2,4 @@ language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj 
 install: bundle install	
 before_script: "./build.sh"
-script: "ruby cucumber_runner.rb"
+script: "ruby cucumber-runner.rb"
