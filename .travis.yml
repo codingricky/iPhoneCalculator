@@ -1,5 +1,6 @@
 language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj 
+before_install: sudo apt-get install imagemagick 
 install: bundle install	
 before_script: "./build.sh"
 script: "ruby cucumber-runner.rb"
