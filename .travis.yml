@@ -1,12 +1,11 @@
 language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj 
 before_install: 
-        - sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
         - bundle install
         - brew install imagemagick 
         - curl http://www.imagemagick.org/Usage/scripts/imagick_type_gen > imagick_type_gen.sh
         - chmod a+x imagick_type_gen.sh
         - mkdir ~/.magick 
-        - ./imagick_type_gen.sh > ~/.magick/type.xml
+        - find /Library/Fonts/ -name '*.ttf' | ./imagick_type_gen.sh -f - > ~/.magick/type.xml
 before_script: "./build.sh"
 script: "ruby cucumber-runner.rb"
