@@ -6,7 +6,6 @@ TARGETS = []
 TARGETS << 'iPad 2 (7.1 Simulator)'
 TARGETS << 'iPhone 5s (7.1 Simulator)'
 TARGETS << 'iPhone 4s (7.1 Simulator)'
-TARGETS << 'iPhone 6 (8.0 Simulator)'
 
 def add_filename_to_image(file_name)
 	img =  MiniMagick::Image.open(file_name)

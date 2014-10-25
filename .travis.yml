@@ -1,7 +1,6 @@
 language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj 
 before_install: 
-        - bundle install
         - brew install imagemagick 
         - curl http://www.imagemagick.org/Usage/scripts/imagick_type_gen > imagick_type_gen.sh
         - chmod a+x imagick_type_gen.sh
