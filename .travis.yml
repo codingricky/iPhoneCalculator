@@ -1,3 +1,7 @@
+env:
+  global:
+     - ARTIFACTS_AWS_REGION=ap-southeast-2
+     - ARTIFACTS_S3_BUCKET=rickys-builds
 language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj
 install:
