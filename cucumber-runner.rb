@@ -24,7 +24,7 @@ def append_images_together(files)
 	 		convert << f
 	 	end
 	 	convert << "-append"
-	 	convert << "screenshot.png"
+	 	convert << "screenshots/screenshot.png"
 	 end
 end
 
