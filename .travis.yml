@@ -1,9 +1,9 @@
 language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj
 install:
-- brew install imagemagick
-- ./install_fonts.sh
-- bundle install
+  - brew install imagemagick
+  - ./install_fonts.sh
+  - bundle install
 before_script: ./build.sh
 script: ruby cucumber-runner.rb
 deploy:
