@@ -14,4 +14,4 @@ addons:
       secure: DSCmZF9tkN3FJgdDSf6j5lHZtT8uVJV4maE3w/AAy8jQmRaB8bmWpOqrt5UOy2pdaEJOlK14Zsg10I2aifQjUYgE9Xs0Fv51r6FdDd25sLd1NdSsNm4J9EIFwNUFDoYLsAvWTsyhxjwODE48TXYc1uYNMQNh0FMbIrPAcrulNYc=
     bucket: rickys-builds
     paths:
-    - $HOME/screenshots/screenshot.png
+    - screenshots
