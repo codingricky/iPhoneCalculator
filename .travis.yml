@@ -1,3 +1,9 @@
+env:
+  global:
+  - ARTIFACTS_AWS_REGION=ap-southeast-2
+  - ARTIFACTS_S3_BUCKET=rickys-builds
+  - secure: Fnf97QCC39VvSETPxxBocHWr/awt9++f918e1ZecDXQUysBOI7sFZ0mAOphvS5wUg3VCupB8rdnANT+SlOo0YaI+9ilb4N/E5MXHRqEJ+NEhV2xEhq90pXXHar9LQ1HQe6yy6T7D56/VrwCt3V/2s8CUNkP2hYxlT1CdFwqs50o=
+  - secure: U07RiwBbXqv0D159H5BnU8gbXgikswua7K/yWP2zJ7BA3bDwgWrc8buQeFP+1V1cOoRTIz7jt2IGbIY5yPb10uOMMreVs/wM+ziDVgVAqQPoGGrCw252OuE0vJ6DexZAkZwQcE1l19c+ryylY4WuOzZVSokMb6LewzvbNTsW224=
 language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj
 install:
@@ -6,16 +12,6 @@ install:
 - bundle install
 before_script: ./build.sh
 script: ruby cucumber-runner.rb
-deploy:
-  provider: s3
-  access_key_id: AKIAI77N7VGZLSFJ7ZIQ
-  secret_access_key:
-    secure: SQwXHE8FDcC0eqbgRAmtsSlgUcVHrDYrppuIRbRYR02RZR1SR71T0h1vEQeo9i2GG6wpsdoWqgqfCyVyYWXoAy6L81g3HK1Odnte8aULjgJwkUtkgBufKcq8KQDVZ6k4oYVNOSj+h/S96Y3N+CY+auWtRgkDj4+oTuupdc4hhZk=
-  bucket: rickys-builds
-  upload-dir: travis-builds
-  acl: public_read
-  on:
-    repo: codingricky/iPhoneCalculator
 addons:
   artifacts:
     paths:
