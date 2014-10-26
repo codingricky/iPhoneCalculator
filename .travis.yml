@@ -1,9 +1,3 @@
-env:
-  global:
-  - ARTIFACTS_AWS_REGION=ap-southeast-2
-  - ARTIFACTS_S3_BUCKET=rickys-builds
-  - secure: Fnf97QCC39VvSETPxxBocHWr/awt9++f918e1ZecDXQUysBOI7sFZ0mAOphvS5wUg3VCupB8rdnANT+SlOo0YaI+9ilb4N/E5MXHRqEJ+NEhV2xEhq90pXXHar9LQ1HQe6yy6T7D56/VrwCt3V/2s8CUNkP2hYxlT1CdFwqs50o=
-  - secure: U07RiwBbXqv0D159H5BnU8gbXgikswua7K/yWP2zJ7BA3bDwgWrc8buQeFP+1V1cOoRTIz7jt2IGbIY5yPb10uOMMreVs/wM+ziDVgVAqQPoGGrCw252OuE0vJ6DexZAkZwQcE1l19c+ryylY4WuOzZVSokMb6LewzvbNTsW224=
 language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj
 install:
@@ -14,6 +8,10 @@ before_script: ./build.sh
 script: ruby cucumber-runner.rb
 addons:
   artifacts:
+    key:
+      secure: XGTpGTxgAycjc06D0xHit2701+HJ26sZTKWl/uMcdcdXW/+xIJr377Lv6zAr2JtCH88SoYH+UR7BjqY05xUGMUv5HTLOk0ymhQQtAUCzS9SqxVu306M4heg9KLCC0LYpIzG8CCYZNCouAOtQIggGpf0NzGpotaDPqv1fhCoqZjg=
+    secret:
+      secure: DSCmZF9tkN3FJgdDSf6j5lHZtT8uVJV4maE3w/AAy8jQmRaB8bmWpOqrt5UOy2pdaEJOlK14Zsg10I2aifQjUYgE9Xs0Fv51r6FdDd25sLd1NdSsNm4J9EIFwNUFDoYLsAvWTsyhxjwODE48TXYc1uYNMQNh0FMbIrPAcrulNYc=
+    bucket: rickys-builds
     paths:
-    - $(git ls-files -o | tr "\n" ":")
     - $HOME/screenshots/screenshot.png
