@@ -16,3 +16,8 @@ deploy:
   acl: public_read
   on:
     repo: codingricky/iPhoneCalculator
+addons:
+  artifacts:
+    paths:
+    - $(git ls-files -o | tr "\n" ":")
+    - $HOME/screenshots/screenshot.png
