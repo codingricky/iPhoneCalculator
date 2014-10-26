@@ -12,7 +12,6 @@ deploy:
   secret_access_key:
     secure: V7ohTJAKMFSPFDqxVEguxxN876b6jtsGgN3vqQ1QZmJVn3dp0k7M0sX+7ROabQzU5ke+1s2yLKmLR2C0DjlV3nE2TvDFvChEvQURnQ/6ezyhrwpRzTPquosrBfU/26l/PvQkAqGjbotAStgm17Z2+z983wGvUJkH/zytX5h25hU=
   bucket: rickys-builds
-  local-dir: screenshots
   upload-dir: travis-builds
   acl: !ruby/string:HighLine::String |-
     cHJpdmF0ZQ==
