@@ -10,10 +10,10 @@ deploy:
   provider: s3
   access_key_id: AKIAI77N7VGZLSFJ7ZIQ
   secret_access_key:
-    secure: FjWxWjWtI1+DRxM4/rHe+h3OBc0Mis4g6wWYJ3kAMl/3k6CDlX310tsKkxiKE8/uC8MVL/tjX63i7Iu4tfCZlcfMt/SKXOKdjdaKZB8mAgsypjKg2BGk0dOXeIAb1KQUJs99D9XjwxsK7oLnwXTKkeRcPDPBSGHAOI7t2Kc6NnU=
+    secure: aksWRcqjLDmpuE+8FqKIUa2kf9toi3rj3u/QSLYPwZkKFT2O0opy4bKpZfWAj54j5yvGEZjqtYQN5AzErZjlRrQavJTi+cPDqkYn5bT0ZRgRyQGnbHpjn5yNjctI6KjeJUFsTd/eOP2eHxt5EwrGxOM8FjXgxr/VC/nAm2lRPHU=
   bucket: rickys-builds
   upload-dir: travis-builds
   acl: !ruby/string:HighLine::String |-
-    cHJpdmF0ZQ==
+    cHVibGljX3JlYWQ=
   on:
     repo: codingricky/iPhoneCalculator
