@@ -1,16 +1,16 @@
 language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj
 install:
-  - brew install imagemagick
-  - ./install_fonts.sh
-  - bundle install
+- brew install imagemagick
+- ./install_fonts.sh
+- bundle install
 before_script: ./build.sh
 script: ruby cucumber-runner.rb
 deploy:
   provider: s3
   access_key_id: AKIAI77N7VGZLSFJ7ZIQ
   secret_access_key:
-    secure: V7ohTJAKMFSPFDqxVEguxxN876b6jtsGgN3vqQ1QZmJVn3dp0k7M0sX+7ROabQzU5ke+1s2yLKmLR2C0DjlV3nE2TvDFvChEvQURnQ/6ezyhrwpRzTPquosrBfU/26l/PvQkAqGjbotAStgm17Z2+z983wGvUJkH/zytX5h25hU=
+    secure: IpaHBZZJEvutjlLhu+Q6r5TLcYti7xMjq6zfNilvaej1yobRn+ou+nJpDJoCScdipRBtXXsA0ZQmualiitB3hEXEqJPmAddEA9S9Oo47Mx2DrGKeC8Ua3oIMT73Kkh5FqcQLrdZfa862qs4uN1p438rNBtpa5HltxE13QmeCpFM=
   bucket: rickys-builds
   upload-dir: travis-builds
   acl: !ruby/string:HighLine::String |-
