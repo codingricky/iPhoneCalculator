@@ -10,7 +10,7 @@ deploy:
   provider: s3
   access_key_id: AKIAI77N7VGZLSFJ7ZIQ
   secret_access_key:
-    secure: IpaHBZZJEvutjlLhu+Q6r5TLcYti7xMjq6zfNilvaej1yobRn+ou+nJpDJoCScdipRBtXXsA0ZQmualiitB3hEXEqJPmAddEA9S9Oo47Mx2DrGKeC8Ua3oIMT73Kkh5FqcQLrdZfa862qs4uN1p438rNBtpa5HltxE13QmeCpFM=
+    secure: FjWxWjWtI1+DRxM4/rHe+h3OBc0Mis4g6wWYJ3kAMl/3k6CDlX310tsKkxiKE8/uC8MVL/tjX63i7Iu4tfCZlcfMt/SKXOKdjdaKZB8mAgsypjKg2BGk0dOXeIAb1KQUJs99D9XjwxsK7oLnwXTKkeRcPDPBSGHAOI7t2Kc6NnU=
   bucket: rickys-builds
   upload-dir: travis-builds
   acl: !ruby/string:HighLine::String |-
