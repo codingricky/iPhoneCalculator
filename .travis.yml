@@ -1,6 +1,6 @@
 language: objective-c
 xcode_project: iPhoneCalculator.xcodeproj
-before_install:
+install:
 - brew install imagemagick
 - ./install_fonts.sh
 - bundle install
